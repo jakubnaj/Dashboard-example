@@ -1,0 +1,31 @@
+.jn-item {
+  h6 {
+    font-size: 12px;
+  }
+  .text-muted {
+    font-size: 10px;
+    color: #8f99a1;
+    margin-top: -8px;
+        margin-bottom: 0px;
+  }
+
+  .badge {
+    font-size: 9px;
+  }
+  .jn-badge-label {
+    margin-bottom: -5px;
+  }
+  
+  @media (min-width: 992px) {
+      .text-muted{
+              margin-top: -8px;
+      }
+    .jn-badge {
+      margin-left: -10px;
+      
+    }
+    .jn-reset-l-p {
+      padding-left: 0px;
+    }
+  }
+}

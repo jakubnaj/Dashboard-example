@@ -1,0 +1,59 @@
+<div class="jn-comment mb-2 row">
+  <div class="comment-avatar col-md-2 col-lg-1 col-sm-12 text-center mt-1">
+    <img class="mx-auto rounded-circle" [src]=comment.avatarPath alt="avatar">
+  </div>
+  <div class="comment-content col-md-8 col-lg-10 col-sm-12">
+    <div class="row">
+      <div class="col-12">
+        <h6 class="comment-meta"><a href="#">{{comment.name}}</a>{{comment.activity}}</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="comment-meta">{{comment.address}}<span class="dot ml-1"></span>{{comment.code}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <small class="text-muted">{{comment.date}}</small>
+      </div>
+    </div>
+    <div *ngIf="comment.images">
+      <div class="row">
+        <div class="col-12">
+          <div class="comment-gallery mt-1 mb-2">
+            <img *ngFor="let image of comment.images" class="img-fluid mt-1 mr-1" [src]=image alt="image">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="#">
+            <small class="text-muted jn-text-underline">View All Photos</small>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2" *ngIf="comment.hasContract">
+      <div class="col-12 mb-2">
+        <div class="jn-icon-group">
+          <img src="./assets/dashboard/activity/act-contract-icon.png" alt="icon">
+          <span>View<br>Contract</span>
+        </div>
+        <div class="jn-icon-group jn-sign">
+          <img src="./assets/dashboard/activity/act-pencil-icon.png" alt="icon">
+          <span>Sign<br>Contract</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2 col-lg-1 col-sm-12 justify-content-center align-self-center">
+    <img class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="./assets/dashboard/activity/act-plus.png"
+      alt="plus">
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="#"><img src="./assets/dashboard/activity/act-dropdown-icon.png" alt="icon">Revire</a>
+      <a class="dropdown-item" href="#"><img src="./assets/dashboard/activity/act-dropdown-icon.png" alt="icon">Message</a>
+      <a class="dropdown-item" href="#"><img src="./assets/dashboard/activity/act-dropdown-icon.png" alt="icon">Reschedule</a>
+    </div>
+  </div>
+</div>

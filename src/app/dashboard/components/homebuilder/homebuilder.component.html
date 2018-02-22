@@ -1,0 +1,19 @@
+<div class="jn-homebuilder text-md-left text-center">
+  <h3 class="mt-4 mb-3">Homebuilder</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-6 text-left">
+          <button>Add Items</button>
+        </div>
+        <div class="col-6 text-right">
+          <span class="text-muted mr-4">Search</span>
+          <img src="./assets/dashboard/homebuilder/hom-vector.png" alt="vector">
+        </div>
+      </div>
+    </li>
+    <li class="list-group-item" *ngFor="let item of items">
+      <app-homebuilder-item [item]=item></app-homebuilder-item>
+    </li>
+  </ul>
+</div>

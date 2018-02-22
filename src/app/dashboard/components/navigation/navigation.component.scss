@@ -1,0 +1,57 @@
+.jn-navigation {
+  .navbar-collapse {
+    font-size: 13px;
+  }
+  .jn-user-corner {
+    a {
+      text-decoration: none;
+    }
+    img {
+      padding: {
+        left: 5px;
+        right: 5px;
+      }
+    }
+  }
+  li.nav-item {
+    position: relative;
+  }
+  .active a::after {
+    border-bottom: 5px solid #00d290;
+    bottom: -10px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+  .jn-mail {
+    img {
+      &:first-child {
+        position: relative;
+      }
+      &:last-child {
+        position: absolute;
+        transform: translateX(-20px);
+      }
+    }
+  }
+  .jn-circle-group {
+    position: relative;
+    a::after {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      transform: translate(2px, 0px);
+      background: #ff5560;
+      content: " ";
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+    }
+  }
+  @media (max-width: 992px) {
+    .active a::after {
+      bottom: -2px;
+    }
+  }
+}

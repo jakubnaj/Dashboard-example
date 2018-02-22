@@ -1,0 +1,12 @@
+<div class="jn-activity text-md-left text-center">
+  <h3 class="mt-4 mb-3">Activity</h3>
+  <ul class="list-group">
+    <li class="list-group-item text-left">
+      <img class="img-fluid" src="./assets/dashboard/activity/act-search.png" alt="search">
+      <input class="jn-inline-search ml-1" placeholder="Search">
+    </li>
+    <li class="list-group-item" *ngFor="let comment of comments" [ngClass]="{'jn-active': comment.isActive }">
+      <app-comment [comment]=comment></app-comment>
+    </li>
+  </ul>
+</div>

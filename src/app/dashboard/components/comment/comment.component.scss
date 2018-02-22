@@ -1,0 +1,64 @@
+.jn-comment {
+  .comment-meta {
+    font-size: 13px;
+  }
+  small {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+  p.comment-meta {
+    margin: {
+      bottom: -6px;
+      top: -5px;
+    }
+  }
+  .dot {
+    height: 5px;
+    width: 5px;
+    transform: translateY(-2px);
+    background-color: #afb8bf;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .jn-text-underline {
+    text-decoration: underline;
+  }
+  .jn-icon-group {
+    line-height: 12px;
+    cursor: pointer;
+    span {
+      @extend .jn-text-underline;
+      font-size: 11px;
+      color: #8f99a1;
+    }
+    &.jn-sign {
+      margin-top: 10px;
+    }
+  }
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+  .dropdown-item {
+    line-height: 12px;
+    font-size: 10px;
+    color: #383838;
+  }
+  .dropdown-menu {
+    min-width: 0px;
+    img {
+      margin-right: 5px;
+      margin-bottom: 2px;
+    }
+  }
+  @media (min-width: 992px) {
+    .jn-icon-group {
+      float: left;
+    }
+    .jn-sign {
+      margin-left: 20px;
+      &.jn-icon-group {
+        margin-top: 0px;
+      }
+    }
+  }
+}
